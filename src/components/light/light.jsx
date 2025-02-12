@@ -3,10 +3,10 @@ import InputField from "./input/input"
 const Light = function(){
     return (
         <div>
-         <div className="  bg-[#F3F4F6] h-screen flex flex-col items-center gap-0 relative">
+         <div className="  bg-[#F3F4F6] h-screen flex flex-col items-center gap-0 relative  ">
           
         <InputField/>
-     <div className="z-10 w-[450px] h-[660px] flex justify-center items-center relative mb-[100px]  ">
+     <div className=" max-md:w-[400px]  z-10 w-[450px] h-[660px] flex justify-center items-center relative mb-[100px]  ">
      <img src="sun.svg" className="absolute top-[-40px] right-[300px]"></img>
            <div className=" backdrop-blur-2xl z-20 w-[350px] h-[550px]  rounded-2xl flex flex-col items-center shadow-lg">
        

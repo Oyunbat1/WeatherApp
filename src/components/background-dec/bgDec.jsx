@@ -1,12 +1,12 @@
 const BackgroundDeco = function () {
   return (
-    <div className="absolute z-10  w-[940px] h-[940px] border rounded-full flex justify-center items-center">
-      <div className="absolute z-10  w-[540px] h-[540px] border rounded-full flex justify-center items-center">
-        <div className="absolute z-10  w-[340px] h-[340px] border rounded-full flex justify-center items-center ">
-          <div className="absolute z-10 w-[139px] h-[139px] bg-[#F3F4F6]  rounded-full"></div>
-          <div className="absolute z-10 w-[40px] h-[40px] bg-[#81a1e1] mb-[176px] ml-[42px] rounded-bl-[10px]"></div>
-          <div className="absolute z-10 w-[40px] h-[40px] bg-[#81a1e1] mb-[-176px] ml-[42px] rounded-tl-[10px]"></div>
-          <div className="absolute z-10 w-[40px] h-[40px] mb-[40px] mr-[38px]">
+    <div className="absolute z-10 max-md:w-screen w-screen  border rounded-full flex justify-center items-center h-screen ">
+      <div className="absolute z-10 max-md:w-screen   w-[540px] h-[540px] border rounded-full flex justify-center items-center">
+        <div className="absolute z-10    w-[340px] h-[340px] border rounded-full flex justify-center items-center ">
+          <div className="absolute z-10   w-[139px] h-[139px] bg-[#F3F4F6]  rounded-full"></div>
+          <div className="absolute z-10 w-[40px] h-[40px] bg-[#81a1e1] mb-[176px] ml-[40px] rounded-bl-[10px]"></div>
+          <div className="absolute z-10 w-[40px] h-[40px] bg-[#81a1e1] mb-[-176px] ml-[40px] rounded-tl-[10px]"></div>
+          <div className="absolute  z-10 w-[40px] h-[40px] mb-[40px] mr-[38px]">
             <img src="vec-left.svg"></img>
           </div>
           <div className="absolute z-10 w-[40px] h-[42px] mb-[46px] ml-[48px]">

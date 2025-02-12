@@ -21,7 +21,7 @@ const InputField = function () {
         <img src="search.svg" className="w-[40px] ml-[20px]"></img>
         <input
           type="text"
-          className=" w-[420px] h-[40px] outline-none pl-[10px] bg-transparent placeholder:text-[26px] "
+          className=" w-[420px] h-[40px] outline-none pl-[10px] bg-transparent placeholder:text-[26px] text-[22px]"
           placeholder="Search"
         ></input>
       </div>
