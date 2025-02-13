@@ -2,7 +2,7 @@ const Dark = function () {
   return (
     <div>
       <div className="bg-[#0F141E] h-screen text-white flex  items-center justify-center   ">
-        <div className="z-10 w-[450px] h-[660px] flex justify-center items-center relative mb-[100px] mt-[40px]">
+        <div className="z-10 w-[450px] h-[660px] flex justify-center items-center relative mb-[100px] mt-[150px]">
           <img
             src="moonbottom.svg"
             className="absolute bottom-[0px] left-[280px] "

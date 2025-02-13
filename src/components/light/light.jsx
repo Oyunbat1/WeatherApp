@@ -1,12 +1,12 @@
 import InputField from "./input/input"
 
-const Light = function(){
+const Light = function(props){
     return (
         <div>
          <div className="  bg-[#F3F4F6] h-screen flex flex-col items-center gap-0 relative  ">
-          
-        <InputField/>
-     <div className=" max-md:w-[400px]  z-10 w-[450px] h-[660px] flex justify-center items-center relative mb-[100px]  ">
+        <InputField countries ={props.countries} setCountries={props.setCountries} filteredCountry = {props.filteredCountry} setFilteredCountries = {props.setFilteredCountries}/>
+        
+     <div className=" max-md:w-[400px]  z-10 w-[450px] h-[660px] flex justify-center items-center relative mb-[100px] ">
      <img src="sun.svg" className="absolute top-[-40px] right-[300px]"></img>
            <div className=" backdrop-blur-2xl z-20 w-[350px] h-[550px]  rounded-2xl flex flex-col items-center shadow-lg">
        
@@ -32,10 +32,8 @@ const Light = function(){
      </div>
      </div>
      </div>
-
-    
    </div>
-        </div>
+    </div>
     )
 }
 
