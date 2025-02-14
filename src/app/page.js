@@ -6,14 +6,15 @@ import { useState , useEffect } from "react";
 
 export default function Home() {
   const [countries , setCountries] = useState([]);
-  const [weatherData,setWeatherData] = useState([]);
+  const [weatherData,setWeatherData] = useState(null);
   const [filteredCountries , setFilteredCountries] = useState([]);
+//
 
   useEffect(()=>{
     const getData = async () =>{
       const response = await fetch('https://countriesnow.space/api/v0.1/countries')
       const countries = await response.json();  
-      
+
       const arr = [];
 
       countries.data.map((country) =>{
@@ -24,6 +25,14 @@ export default function Home() {
     getData();
   },[])
 
+  useEffect(()=>{
+    const getWeatherData = async ()=>{
+      const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=a883db7833914b2189320617251402=${selectedCity}`);
+      const fetchedData = await response.json();
+      console.log(fetchedData);
+    }
+    getWeatherData()
+  },[])
 
  
 

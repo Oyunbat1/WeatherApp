@@ -4,18 +4,17 @@ import { useState } from "react";
 
 const InputField = function (props) {
   const [selectCountry , setSelectedCountry ] =useState([]);
-  const [filteredCountry , setFilteredCountries ] = useState(props.filteredCountry);
+  const [filteredCountry , setFilteredCountries ] = useState([]);
 
     const onChangeSearchValue = (e)=>{
     const data = props.countries.filter(country => country.toLowerCase().startsWith(e.target.value)).slice(0,4);
     props.setFilteredCountries(data);
   }
   
-
-  function SelectCountry(index){
-    setSelectedCountry(filteredCountry[index]);
-    props.setFilteredCountries([]);
+  function ChooseCountry(index){
+    console.log(index)
   }
+
   
   return (
     <div className="z-20 flex flex-col">
@@ -27,8 +26,8 @@ const InputField = function (props) {
           placeholder="Search" onChange={onChangeSearchValue}
         ></input>
       </div>
-   <div className="w-[500px] bg-white/80 rounded-2xl mt-[8px] max-xl:ml-[160px] max-lg:w-[380px]  max-md:w-[340px]  ">
-   {props.filteredCountry.map((country ,index) => (<div onClick={()=>SelectCountry(index)} className=" py-[4px] pl-[26px] font-semibold  flex items-center gap-3" key={country+index}>
+   <div  className="w-[500px] bg-white/80 rounded-2xl mt-[8px] max-xl:ml-[160px] max-lg:w-[380px]  max-md:w-[340px]  ">
+   {props.filteredCountry.map((country ,index) => (<div className=" py-[4px] pl-[26px] font-semibold  flex items-center gap-3" key={country+index}>
         <img className="w-[30px]" src="Pin.svg"></img>
         {country}
       </div>))}
